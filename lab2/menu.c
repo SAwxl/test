@@ -113,7 +113,7 @@ void rectangle()
         }
         printf("\n");
     }
-    printf("\n");
+    printf("===============================================\n");
 }
 
 //The addition of two numbers
