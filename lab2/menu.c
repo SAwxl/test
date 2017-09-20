@@ -125,6 +125,7 @@ void add()
     scanf("%lf %lf", &num1, &num2);
     add = num1 + num2;
     printf("%lf + %lf = %lf\n", num1, num2, add);
+    printf("===============================================\n");
 }
 
 //The subtract of two numbers
@@ -136,6 +137,7 @@ void subtract()
     scanf("%lf %lf", &num1, &num2);
     sub = num1 - num2;
     printf("%lf - %lf = %lf\n", num1, num2, sub);
+    printf("===============================================\n");
 }
 
 //Multiplication of two numbers
@@ -147,6 +149,7 @@ void multiply()
     scanf("%lf %lf", &num1, &num2);
     multi = num1 * num2;
     printf("%lf * %lf = %lf\n", num1, num2, multi);
+    printf("===============================================\n");
 }
 
 //Division of two numbers
@@ -159,10 +162,12 @@ void divide()
     if( num2 == 0 )
     {
         printf("Error:divisor cannot be aero!\n");
+        printf("===============================================\n");
     }
     else
     {
         div = num1 / num2;
         printf("%lf / %lf = %lf\n",num1, num2, div);
+        printf("===============================================\n");
     }
 }
