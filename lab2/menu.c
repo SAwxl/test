@@ -91,9 +91,78 @@ void quit()
 //well,show you my enthusiam
 void hello()
 {
-    printf("========================================\n");
+    printf("===============================================\n");
     printf("My name is Wu Xiale\n");
-    printf("Thank you for your using my paogram\n");
+    printf("Thank you for your using my program\n");
 }
 
-//
+//Draw a rectangle
+void rectangle()
+{
+    int length,width;
+    int row,colume;
+    printf("===============================================\n");
+    printf("rectangle!\n Please input length and width:\n");
+    printf("(Type-in format as:length,width)\n");
+    scanf("%d, %d", &length, &width);
+    for(row=1; row<=width; row++)
+    {
+        for(colume=1; colume<=length; colume++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+//The addition of two numbers
+void add()
+{
+    double num1, num2, add;
+    printf("===============================================\n");
+    printf("Addition!\n Please input two numbers:\n");
+    scanf("%lf %lf", &num1, &num2);
+    add = num1 + num2;
+    printf("%lf + %lf = %lf\n", num1, num2, add);
+}
+
+//The subtract of two numbers
+void subtract()
+{
+    double num1, num2, sub;
+    printf("===============================================\n");
+    printf("Subtraction!\n Please input two numbers:\n");
+    scanf("%lf %lf", &num1, &num2);
+    sub = num1 - num2;
+    printf("%lf - %lf = %lf\n", num1, num2, sub);
+}
+
+//Multiplication of two numbers
+void multiply()
+{
+    double num1, num2, multi;
+    printf("===============================================\n");
+    printf("Multiplication!\n Please input two numbers:\n");
+    scanf("%lf %lf", &num1, &num2);
+    multi = num1 * num2;
+    printf("%lf * %lf = %lf\n", num1, num2, multi);
+}
+
+//Division of two numbers
+void divide()
+{
+    double num1, num2, div;
+    printf("===============================================\n");
+    printf("Division!\n Please input two numbers:\n");
+    scanf("%lf %lf", &num1, &num2);
+    if( num2 == 0 )
+    {
+        printf("Error:divisor cannot be aero!\n");
+    }
+    else
+    {
+        div = num1 / num2;
+        printf("%lf / %lf = %lf\n",num1, num2, div);
+    }
+}
