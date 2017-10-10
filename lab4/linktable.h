@@ -1,4 +1,4 @@
-// FileName: linktable.c    
+// FileName: linktable.h    
 // Author  : Wuxiale
 // Date    : 2017.10.10
 
